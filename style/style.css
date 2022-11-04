@@ -1,0 +1,130 @@
+:root{
+    /* fuentes */
+    --fuente1: 'Inter';
+    --fuemte2: 'Lexend Deca';
+
+    /* Colores */
+      /* ### Primary */
+
+--Very-dark-blue_main-background: hsl(233, 47%, 7%);
+--Dark-desaturated-blue_card-background: hsl(244, 38%, 16%);
+--Soft-violet_accent: hsl(277, 64%, 61%);
+
+  /* ### Neutral */
+
+--White-main-heading-stats: hsl(0, 0%, 100%);
+--Slightly-transparent-white_main-paragraph: hsla(0, 0%, 100%, 0.75);
+--Slightly-transparent-white_stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--Very-dark-blue_main-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    width: 375px;
+    height: 100%;
+    background-color: var(--Dark-desaturated-blue_card-background);
+    border-radius: 10px;
+    text-align: center;
+    font-family: var(--fuente1);
+}
+
+.img--card{
+    height: 32%;
+    width: 100%;
+    background: linear-gradient( hsl(277, 100%, 25%, .514) 100%, rgba(255, 255, 255, 0)), url(/images/image-header-mobile.jpg);
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.title{
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+.title span {
+    color: var(--Soft-violet_accent);
+}
+
+.description{
+    line-height: 35px;
+    color: var(--Slightly-transparent-white_stat-headings)
+}
+
+.content{
+    padding: 30px;
+    color: var(--Slightly-transparent-white_main-paragraph);
+}
+
+
+.box{
+    margin-top: 20px;
+    color: var(--White-main-heading-stats);
+    text-transform: uppercase;
+
+}
+
+.box p{
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-family: var(--fuemte2);
+
+
+}
+
+@media (min-width: 768px){
+    .card{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 30rem;
+        width: 80rem;
+        text-align: left;
+
+    }
+
+
+    .img--card{
+        height: 100%;
+        width: 80%;
+        grid-column: 2/3;
+        border-radius: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+    }
+
+    .content{
+        width: 70%;
+        padding: 80px;
+        
+        
+    }
+
+    .info{
+        display: flex;
+        gap: 4rem;
+        margin-top: 3rem;
+        
+    }
+    
+
+}
