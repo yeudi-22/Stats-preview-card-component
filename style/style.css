@@ -49,7 +49,7 @@ body {
 .img--card{
     height: 32%;
     width: 100%;
-    background: linear-gradient( hsl(277, 100%, 25%, .514) 100%, rgba(255, 255, 255, 0)), url(/images/image-header-mobile.jpg);
+    background: linear-gradient( hsl(277, 100%, 25%, .514) 100%, rgba(255, 255, 255, 0)), url(images/image-header-mobile.jpg);
     background-size: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -59,6 +59,7 @@ body {
 .title{
     font-size: 2em;
     margin-bottom: 1rem;
+    color: white;
 }
 
 .title span {
